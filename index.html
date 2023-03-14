@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Stream</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
           <div class="container-fluid">
@@ -49,7 +49,7 @@
         </nav>
 </header>
         <!-- Carousel -->
-        <div class="position-relative">
+        <div class="position-relative" style="margin-top: 71px;">
           <div class="alert alert-warning alert-dismissible fade show alert-position alert-sm" role="alert">
             <strong>New Series Arrival</strong> Check it out.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -70,11 +70,11 @@
                   </div>
               </div>
               <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/money heist1.jpg" class="d-block w-100" alt="...">
+                <a href="video.html"><img src="img/money heist1.jpg" class="d-block w-100" alt="..."></a>
                 <div class="carousel-caption d-none d-sm-block">
                   <h1>Money Heist</h1>
                   <p>An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
+                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#video-modal-money-heist">Details</button>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="5000">
@@ -96,13 +96,67 @@
             </button>
           </div>
         </div>     
-  <main>
+  <main class="mb-auto pt-3">
               <div class="container">
                 <h2>New & Popular</h2>
                 <div class="row g-1 justify-content-center">
-                  <div class="col-10 col-md-8 col-lg-2 movies-container">
+                  <div class="col-10 col-md-8 col-lg-2">
+                    <div class="card">
+                      <a href="video-money-heist.html">
+                        <img src="img/money heist.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal-money-heist">Details</button>
+                    </div>
+                  </div>
+                  <div class="col-10 col-md-8 col-lg-2">
                     <div class="card">
                       <a href="video.html">
+                        <img src="img/Jhon Wick.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
+                    </div>
+                  </div>
+                  <div class="col-10 col-md-8 col-lg-2">
+                    <div class="card">
+                      <a href="video.html">
+                        <img src="img/moon knight.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
+                    </div>
+                  </div>
+                  <div class="col-10 col-md-8 col-lg-2">
+                    <div class="card">
+                      <a href="video.html">
+                        <img src="img/ant man.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
+                    </div>
+                  </div>
+                  <div class="col-10 col-md-8 col-lg-2">
+                    <div class="card">
+                      <a href="video.html">
+                        <img src="img/avengers.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
+                    </div>
+                  </div>
+                  <div class="col-10 col-md-8 col-lg-2">
+                    <div class="card">
+                      <a href="video.html">
+                        <img src="img/jurassic world.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="container">
+                <h2>For You</h2>
+                <div class="row g-1 justify-content-center">
+                  <div class="col-10 col-md-8 col-lg-2 movies-container">
+                    <div class="card">
+                      <a href="video-money-heist.html">
                         <img src="img/money heist.jpg" class="card-img-top" alt="...">
                       </a>
                       <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
@@ -150,61 +204,6 @@
                   </div>
                 </div>
               </div>
-              
-              <div class="container">
-                <h2>New & Popular</h2>
-                <div class="row g-1 justify-content-center">
-                  <div class="col-10 col-md-8 col-lg-2 movies-container">
-                    <div class="card">
-                      <a href="video.html">
-                        <img src="img/money heist.jpg" class="card-img-top" alt="...">
-                      </a>
-                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
-                    </div>
-                  </div>
-                  <div class="col-10 col-md-8 col-lg-2">
-                    <div class="card">
-                      <a href="video.html">
-                        <img src="img/Jhon Wick.jpg" class="card-img-top" alt="...">
-                      </a>
-                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
-                    </div>
-                  </div>
-                  <div class="col-10 col-md-8 col-lg-2">
-                    <div class="card">
-                      <a href="video.html">
-                        <img src="img/moon knight.jpg" class="card-img-top" alt="...">
-                      </a>
-                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
-                    </div>
-                  </div>
-                  <div class="col-10 col-md-8 col-lg-2">
-                    <div class="card">
-                      <a href="video.html">
-                        <img src="img/ant man.jpg" class="card-img-top" alt="...">
-                      </a>
-                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
-                    </div>
-                  </div>
-                  <div class="col-10 col-md-8 col-lg-2">
-                    <div class="card">
-                      <a href="video.html">
-                        <img src="img/avengers.jpg" class="card-img-top" alt="...">
-                      </a>
-                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
-                    </div>
-                  </div>
-                  <div class="col-10 col-md-8 col-lg-2">
-                    <div class="card">
-                      <a href="video.html">
-                        <img src="img/jurassic world.jpg" class="card-img-top" alt="...">
-                      </a>
-                      <button type="button" class="btn btn-warning btn-rounded" data-bs-toggle="modal" data-bs-target="#video-modal">Details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
 </main>
 <!-- Modal -->
 <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -259,18 +258,18 @@
   </div>
 </div>
 <!-- Modal Detail -->
-    <div class="modal fade" id="video-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="video-modal-money-heist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" data-bs-theme="dark">
         <div class="modal-content">
           <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-body">
-            <img src="img/jabami.jpg" class="card-img-top" alt="...">
+            <img src="img/money heist1.jpg" class="card-img-top" alt="...">
             <div class="modal-body">
-              <h1>Gilmore Girls</h1>
-              <P>Comedy | Drama</P>
-              <p>A dramedy centering around the relationship between a thirtysomething single mother and her teen daughter living in Stars Hollow, Connecticut.</p>
+              <h1>Money Heist</h1>
+              <P>Action | Crime | Drama</P>
+              <p>An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
             <div>
-              <button type="button" class="btn btn-warning btn-watch">Watch</button>
+              <a href="video-money-heist.html"><button type="button" class="btn btn-warning btn-watch">Watch</button></a>
             </div>
           </div>
           </div>
@@ -278,8 +277,10 @@
       </div>
     </div>
 <!-- FOOTER -->
-<footer>
-  
+<footer class="bg-dark text-center text-white mt-2">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright : Rheza Bramianto
+    </div>
 </footer>
   
 </body>

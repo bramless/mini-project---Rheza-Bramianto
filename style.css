@@ -1,7 +1,6 @@
 body {
   background: #252525;
   color: white;
-  height: auto;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -11,7 +10,11 @@ h2{
   font-family: 'Roboto', sans-serif;
 }
 
-/* Background color navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+/*navbar */
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
   background: #252525;
 }
@@ -39,11 +42,33 @@ h2{
   z-index: 100;
 }
 
+/*navbar end*/
+
 /* Carousel */
 .carousel-item{
   cursor: pointer;
 }
+.carousel .carousel-item {
+  height: 720px;
+}
 
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 720px;
+}
+
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 100%;
+}
+
+/* Carousel end */
+
+/* Card */
 .card {
   --bs-card-bg: none;
   border-radius: 4px;
@@ -58,10 +83,7 @@ h2{
   z-index: 100;
   cursor: pointer;
 }
-
-.video-container {
-  justify-content: center;
-}
+/* Card end */
 
 .alert-position {
   position: fixed;
@@ -114,4 +136,41 @@ h2{
   line-height: 23px;
   text-align: center;
 }
+/* Modal end */
+
+/* Breadcrumb */
+.breadcrumb-item+.breadcrumb-item::before {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.breadcrumb-item.active {
+  color: gray;
+}
+
+.breadcrumb-style {
+  margin: 80px 20px;
+}
+/* Breadcrumb end */
+
+/* Reponsif iFrame */
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsif iFrame end */
+
 /* Footer */
