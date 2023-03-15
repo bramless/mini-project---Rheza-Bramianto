@@ -37,7 +37,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-contact-us">Contact Us</a>
                 </li>
               </ul>
               <form class="d-flex my-auto py-3" role="search">
@@ -295,6 +295,33 @@
         </div>
       </div>
     </div>
+<!-- Modal Contact Us -->
+<div class="modal fade" id="modal-contact-us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" data-bs-theme="dark">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      <h3 class="d-flex justify-content-center">Contact Us</h3>
+      <div class="modal-body">
+        <div class="mb-3">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+          </div>
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Feedback :</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <div class="input-group mb-3">
+
+        </div>
+    </div>
+    <button type="button" class="btn btn-outline-warning d-flex justify-content-end btn-watch">Submit</button>
+    </div>
+    </div>
+  </div>
+</div>
 <!-- FOOTER -->
 <footer class="bg-dark text-center text-white mt-2">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
