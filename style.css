@@ -171,6 +171,12 @@ a {
   height: 100%;
 }
 
-/* Responsif iFrame end */
+/* media query */
+@media only screen and (max-width: 1386px){
+  h2 {
+    font-size: 24px;
+  }
+}
+
 
 /* Footer */
