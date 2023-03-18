@@ -212,12 +212,20 @@
 <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" data-bs-theme="dark">
     <div class="modal-content">
-      <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="d-flex justify-content-end padding-close-modal">
+        <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
       <h3 class="d-flex justify-content-center">Login</h3>
       <div class="modal-body">
         <div>
-          <input class="form-control inputEmail" type="email" id="exampleFormControlInput1"
-            placeholder="Enter Username or email address">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email or Username</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email or Username">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="...">
+          </div>
             <div class="form-check form-switch d-flex justify-content-center align-items-center mt-24">
               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style=" margin: 0;">
               <label class="form-check-label or-text" for="flexSwitchCheckDefault">Keep me signed in</label>
@@ -265,15 +273,17 @@
     <div class="modal fade" id="video-modal-money-heist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" data-bs-theme="dark">
         <div class="modal-content">
-          <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="d-flex justify-content-end padding-close-modal">
+            <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
             <div class="modal-body">
             <img src="img/money heist1.jpg" class="card-img-top" alt="...">
             <div class="modal-body">
               <h1>Money Heist</h1>
               <P>Action | Crime | Drama</P>
               <p>An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
-            <div>
-              <a href="video-money-heist.html"><button type="button" class="btn btn-warning btn-watch">Watch</button></a>
+            <div class="d-flex justify-content-end">
+              <a href="video-money-heist.html"><button type="button" class="btn btn-warning">Watch</button></a> 
             </div>
           </div>
           </div>
@@ -284,15 +294,17 @@
     <div class="modal fade" id="video-modal-john-wick" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" data-bs-theme="dark">
         <div class="modal-content">
+        <div class="d-flex justify-content-end padding-close-modal">
           <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
             <div class="modal-body">
             <img src="img/jhon wick1.webp" class="card-img-top" alt="...">
             <div class="modal-body">
               <h1>John Wick</h1>
               <P>Action | Crime | Thriller</P>
               <p>An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took his car.</p>
-            <div>
-              <a href="#"><button type="button" class="btn btn-warning btn-watch">Watch</button></a>
+            <div class="d-flex justify-content-end">
+              <a href=""><button type="button" class="btn btn-warning">Watch</button></a> 
             </div>
           </div>
           </div>
@@ -303,7 +315,9 @@
     <div class="modal fade" id="video-modal-antman" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" data-bs-theme="dark">
         <div class="modal-content">
-          <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="d-flex justify-content-end padding-close-modal">
+            <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
             <div class="modal-body">
             <img src="img/ant man1.jpg" class="card-img-top" alt="...">
             <div class="modal-body">
@@ -311,7 +325,9 @@
               <P>Action | Comedy | Sci-Fi</P>
               <p>Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, pull off a plan that will save the world.</p>
             <div>
-              <a href="#"><button type="button" class="btn btn-warning btn-watch">Watch</button></a>
+              <div class="d-flex justify-content-end">
+                <a href=""><button type="button" class="btn btn-warning">Watch</button></a> 
+              </div>
             </div>
           </div>
           </div>
@@ -323,7 +339,9 @@
 <div class="modal fade" id="modal-contact-us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" data-bs-theme="dark">
     <div class="modal-content">
-      <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="d-flex justify-content-end padding-close-modal">
+        <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
       <h3 class="d-flex justify-content-center">Contact Us</h3>
       <div class="modal-body">
         <div class="mb-3">
@@ -338,13 +356,15 @@
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Subject</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="...">
-            </div>
+          </div>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Feedback :</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-    <button type="button" class="btn btn-outline-warning d-flex justify-content-end btn-watch">Submit</button>
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-outline-warning">Submit</button>
+        </div>
     </div>
     </div>
   </div>
